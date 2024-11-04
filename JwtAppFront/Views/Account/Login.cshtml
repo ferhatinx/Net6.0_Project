@@ -1,0 +1,21 @@
+@model LoginModel
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div>
+    <form asp-controller="Account" asp-action="Login" method="post" >
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Kullanici Adi</label>
+            <input asp-for="@Model.Username"  class="form-control" id="exampleInputEmail1" >
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Şifre</label>
+            <input asp-for="@Model.Password" type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3 form-check">
+            <input asp-for="@Model.isPersistant" disabled type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ferhat\\Documents\\c#\\Project\\Net6.0\\JwtAppBack\\JwtAppBack.csproj": {}
+    "c:\\Users\\Ferhat\\Documents\\c#\\Project\\Net6.0\\JwtAppBack\\JwtAppBack.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ferhat\\Documents\\c#\\Project\\Net6.0\\JwtAppBack\\JwtAppBack.csproj": {
+    "c:\\Users\\Ferhat\\Documents\\c#\\Project\\Net6.0\\JwtAppBack\\JwtAppBack.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ferhat\\Documents\\c#\\Project\\Net6.0\\JwtAppBack\\JwtAppBack.csproj",
+        "projectUniqueName": "c:\\Users\\Ferhat\\Documents\\c#\\Project\\Net6.0\\JwtAppBack\\JwtAppBack.csproj",
         "projectName": "JwtAppBack",
-        "projectPath": "C:\\Users\\Ferhat\\Documents\\c#\\Project\\Net6.0\\JwtAppBack\\JwtAppBack.csproj",
+        "projectPath": "c:\\Users\\Ferhat\\Documents\\c#\\Project\\Net6.0\\JwtAppBack\\JwtAppBack.csproj",
         "packagesPath": "C:\\Users\\Ferhat\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ferhat\\Documents\\c#\\Project\\Net6.0\\JwtAppBack\\obj\\",
+        "outputPath": "c:\\Users\\Ferhat\\Documents\\c#\\Project\\Net6.0\\JwtAppBack\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ferhat\\AppData\\Roaming\\NuGet\\NuGet.Config"

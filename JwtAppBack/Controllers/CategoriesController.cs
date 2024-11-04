@@ -9,6 +9,7 @@ namespace JwtAppBack.Controllers;
 
 [ApiController]
 [Route("[controller]")]
+[Authorize]
 public class CategoriesController : ControllerBase
 {
     private readonly IMediator _mediator;
@@ -38,9 +39,15 @@ public class CategoriesController : ControllerBase
         return Created("",rq);
     }
     [HttpDelete("{id}")]
-    public async Task<IActionResult> Delete(int id)
+    public async Task<IActionResult> Delete([FromRoute]int id)
     {
-        await _mediator.Send(new RemoveProductCommandRequest(id));
+        await _mediator.Send(new RemoveCategoryCommandRequest(id));
         return NoContent();
+    }
+    [HttpPut]
+    public async Task<IActionResult> Update(UpdateCategoryCommandRequest rq)
+    {
+        var response = await _mediator.Send(rq);
+        return Ok(response);
     }
 }

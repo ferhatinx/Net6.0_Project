@@ -46,7 +46,7 @@ public class Repository<T> : IRepository<T> where T : BaseEntity
 
     public async Task UpdateAsync(T entity, T unchanged)
     {
-        _context.Entry(unchanged).CurrentValues.SetValues(entity);
+        _context.Update(entity);
         await _context.SaveChangesAsync();
     }
 

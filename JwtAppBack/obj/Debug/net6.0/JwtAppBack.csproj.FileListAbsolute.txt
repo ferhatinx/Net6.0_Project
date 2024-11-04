@@ -82,3 +82,4 @@ c:\Users\Ferhat\Documents\c#\Project\Net6.0\JwtAppBack\bin\Debug\net6.0\Microsof
 c:\Users\Ferhat\Documents\c#\Project\Net6.0\JwtAppBack\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 c:\Users\Ferhat\Documents\c#\Project\Net6.0\JwtAppBack\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
 c:\Users\Ferhat\Documents\c#\Project\Net6.0\JwtAppBack\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Ferhat\Documents\c#\Project\Net6.0\JwtAppBack\obj\Debug\net6.0\JwtAppBack.sourcelink.json

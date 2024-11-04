@@ -5,7 +5,7 @@ using MediatR;
 
 namespace JwtAppBack.Core.Application.Features.CQRS.Handlers;
 
-public class RemoveProductCommandHandler : IRequestHandler<RemoveProductCommandRequest>
+public class RemoveProductCommandHandler : IRequestHandler<RemoveProductCommandRequest, int>
 {
     private readonly IRepository<Product> _productRepository;
 
@@ -14,13 +14,15 @@ public class RemoveProductCommandHandler : IRequestHandler<RemoveProductCommandR
         _productRepository = productRepository;
     }
 
-
-    public async Task<Unit> Handle(RemoveProductCommandRequest request, CancellationToken cancellationToken)
+    public async Task<int> Handle(RemoveProductCommandRequest request, CancellationToken cancellationToken)
     {
-        var deletedEntity = await _productRepository.GetByFilterAsync(x=>x.Id == request.Id);
+        var deletedEntity = await _productRepository.GetByFilterAsync(x => x.Id == request.Id);
         if (deletedEntity != null)
+        {
             await _productRepository.RemoveAsync(deletedEntity);
-        return Unit.Value;
+            return 1;
+        }
+        return 0;
     }
 
 }

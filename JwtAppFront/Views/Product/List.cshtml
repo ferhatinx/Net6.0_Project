@@ -1,0 +1,41 @@
+@model List<ProductListModel>
+@{
+    Layout="~/Views/Shared/_Layout.cshtml";
+}
+@if (TempData["ErrorMessage"] !=  null)
+{
+    <div class="alert alert-danger">
+        @TempData["ErrorMessage"]
+    </div>
+}
+<div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Ürün Adi</th>
+                <th scope="col">Stok</th>
+                <th scope="col">Fiyat</th>
+                <th scope="col">Kategorisi</th>
+                <th scope="col">İşlemler</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var p in Model)
+            {
+                <tr>
+                    <th scope="row">@p.Id</th>
+                    <td >@p.Name</td>
+                    <td >@p.Stock</td>
+                    <td >@p.Price</td>
+                    <td >@p.CategoryId</td>
+                     <td colspan="2">
+                        <a class="btn btn-danger" asp-controller="Product" asp-action="Remove" asp-route-id="@p.Id">Sil</a>
+                        
+                     </td>
+                </tr>
+            }
+
+        </tbody>
+    </table>
+</div>

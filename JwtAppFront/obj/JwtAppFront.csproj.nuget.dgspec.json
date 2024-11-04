@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ferhat\\Documents\\c#\\Project\\Net6.0\\JwtAppFront\\JwtAppFront.csproj": {}
+    "c:\\Users\\Ferhat\\Documents\\c#\\Project\\Net6.0\\JwtAppFront\\JwtAppFront.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ferhat\\Documents\\c#\\Project\\Net6.0\\JwtAppFront\\JwtAppFront.csproj": {
+    "c:\\Users\\Ferhat\\Documents\\c#\\Project\\Net6.0\\JwtAppFront\\JwtAppFront.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ferhat\\Documents\\c#\\Project\\Net6.0\\JwtAppFront\\JwtAppFront.csproj",
+        "projectUniqueName": "c:\\Users\\Ferhat\\Documents\\c#\\Project\\Net6.0\\JwtAppFront\\JwtAppFront.csproj",
         "projectName": "JwtAppFront",
-        "projectPath": "C:\\Users\\Ferhat\\Documents\\c#\\Project\\Net6.0\\JwtAppFront\\JwtAppFront.csproj",
+        "projectPath": "c:\\Users\\Ferhat\\Documents\\c#\\Project\\Net6.0\\JwtAppFront\\JwtAppFront.csproj",
         "packagesPath": "C:\\Users\\Ferhat\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ferhat\\Documents\\c#\\Project\\Net6.0\\JwtAppFront\\obj\\",
+        "outputPath": "c:\\Users\\Ferhat\\Documents\\c#\\Project\\Net6.0\\JwtAppFront\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ferhat\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -42,6 +42,16 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.35, )"
+            },
+            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[6.0.35, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

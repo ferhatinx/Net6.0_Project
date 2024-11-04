@@ -32,7 +32,11 @@ public class ProductsController : ControllerBase
     [HttpDelete("{id}")]
     public async Task<IActionResult> Delete(int id)
     {
-        var response = await _mediator.Send(new RemoveProductCommandRequest(id));      
+        var response = await _mediator.Send(new RemoveProductCommandRequest(id));       
+        if(response == 0)
+        {
+            return BadRequest();
+        }      
         return Ok(response);
     }
     [HttpPost]
