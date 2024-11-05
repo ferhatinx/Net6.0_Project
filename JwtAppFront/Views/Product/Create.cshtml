@@ -1,0 +1,30 @@
+@using System.Text.Json
+
+@model ProductCreateModel
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    
+}
+<div>
+    <h2>Kategori Ekleme</h2>
+    <form asp-action="Create" asp-controller="Product" method="post">
+        <div class="mb-3">
+            <label for="city">Kategori Seçiniz:</label>
+            <select class="form-select" asp-for="@Model.CategoryId" asp-items=@Model.Categories></select>
+        </div>
+        <div class="mb-3">
+ 
+        <label class="form-label">Ürün Adi</label>
+        <input asp-for="@Model.Name" class="form-control">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Ürün Fiyati</label>
+            <input asp-for="@Model.Price" class="form-control">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Ürün Stok</label>
+            <input asp-for="@Model.Stock" class="form-control">
+        </div>
+        <button type="submit" class="btn btn-primary">Ekle</button>
+    </form>
+</div>

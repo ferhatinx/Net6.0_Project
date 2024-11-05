@@ -21,6 +21,7 @@ public class CategoriesController : ControllerBase
 
 
     [HttpGet]
+    [AllowAnonymous]
     public async Task<IActionResult> GetAll()
     {
         var response = await _mediator.Send(new GetAllCategoryQueryRequest());

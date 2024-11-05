@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("JwtAppBack")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9e473d20422b410d9c8ea73ec5c021a2bede8c43")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+72e191094870aacf5b8d01a55bbffcd19a11e1cb")]
 [assembly: System.Reflection.AssemblyProductAttribute("JwtAppBack")]
 [assembly: System.Reflection.AssemblyTitleAttribute("JwtAppBack")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
